@@ -20,10 +20,10 @@
     "dotenv": "^16.0.3",
     "express": "^5.2.1",
     "helmet": "^8.1.0",
-    "jsonwebtoken": "^9.0.3"
+    "jsonwebtoken": "^9.0.3",
+    "@repo/db": "workspace:*",
   },
   "devDependencies": {
-    "@repo/db": "workspace:*",
     "@types/bcrypt": "^6.0.0",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
