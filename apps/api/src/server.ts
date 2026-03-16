@@ -12,9 +12,10 @@ import { votePost } from "./controllers/vote.controller"
 
 const app = express()
 
-
 // to keep the server awake
-app.get("/ping",(_,res)=>res.send("Server is awake"))
+app.get("/", (req, res) => {
+  res.status(200).send("Backend is Up and Running!");
+});
 app.use(helmet())
 app.use(cors({
   origin: process.env.FRONTEND_URL || "http://localhost:3000",
